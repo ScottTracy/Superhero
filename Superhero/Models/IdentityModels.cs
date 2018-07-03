@@ -29,7 +29,7 @@ namespace Superhero.Models
         {
             return new ApplicationDbContext();
         }
-        public DbSet<Superhero> Superhero { get; set; }
+        public DbSet<Superheromodel> Superhero { get; set; }
         
     }
 }

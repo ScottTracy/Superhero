@@ -122,3 +122,5 @@ C:\Users\scott_iclhpmu\source\repos\Superhero\Superhero\obj\Debug\Superhero.dll
 C:\Users\scott_iclhpmu\source\repos\Superhero\Superhero\obj\Debug\Superhero.pdb
 C:\Users\scott_iclhpmu\source\repos\Superhero\Superhero\obj\Debug\Superhero.Migrations.MakeSuperheros.resources
 C:\Users\scott_iclhpmu\source\repos\Superhero\Superhero\obj\Debug\Superhero.csproj.GenerateResource.cache
+C:\Users\scott_iclhpmu\source\repos\Superhero\Superhero\obj\Debug\Superhero.Migrations.addedsuperheromodel.resources
+C:\Users\scott_iclhpmu\source\repos\Superhero\Superhero\obj\Debug\Superhero.Migrations.SeedingDB.resources

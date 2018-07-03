@@ -206,11 +206,19 @@
     <Compile Include="Migrations\201807021416552_MakeSuperheros.Designer.cs">
       <DependentUpon>201807021416552_MakeSuperheros.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201807021612504_added superhero model.cs" />
+    <Compile Include="Migrations\201807021612504_added superhero model.Designer.cs">
+      <DependentUpon>201807021612504_added superhero model.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807021827423_SeedingDB.cs" />
+    <Compile Include="Migrations\201807021827423_SeedingDB.Designer.cs">
+      <DependentUpon>201807021827423_SeedingDB.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
-    <Compile Include="Models\Superhero.cs" />
+    <Compile Include="Models\Superheromodel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -273,9 +281,9 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Superhero\Index.cshtml" />
     <Content Include="Views\Superhero\Create.cshtml" />
     <Content Include="Views\Superhero\Edit.cshtml" />
+    <Content Include="Views\Superhero\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -296,6 +304,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201807021416552_MakeSuperheros.resx">
       <DependentUpon>201807021416552_MakeSuperheros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807021612504_added superhero model.resx">
+      <DependentUpon>201807021612504_added superhero model.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807021827423_SeedingDB.resx">
+      <DependentUpon>201807021827423_SeedingDB.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
