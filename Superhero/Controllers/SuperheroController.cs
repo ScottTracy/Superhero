@@ -66,6 +66,10 @@ namespace Superhero.Controllers
             }
             return RedirectToAction("Index");
         }
+ 
+
+        
+        //Get:
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -77,7 +81,7 @@ namespace Superhero.Controllers
             {
                 return HttpNotFound();
             }
-            return RedirectToAction("Index");
+            return View(superhero);
         }
         //get
         // POST: 
