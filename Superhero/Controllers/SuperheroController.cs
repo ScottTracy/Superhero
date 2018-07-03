@@ -52,7 +52,7 @@ namespace Superhero.Controllers
                 return HttpNotFound();
             }
             return View(superhero);
-            
+
         }
         [HttpPost]
         public ActionResult Edit([Bind(Include = "ID,Name,AlterEgo,PrimaryAbility,SecondaryAbility,Catchphrase")] Superheromodel superhero)
@@ -64,7 +64,35 @@ namespace Superhero.Controllers
                 return RedirectToAction("Index");
 
             }
-                return View("index");
+            return RedirectToAction("Index");
+        }
+        public ActionResult Details(int? id)
+        {
+            if (id == null)
+            {
+                return RedirectToAction("Index");
+            }
+            Superheromodel superhero = db.Superhero .Find(id);
+            if (superhero == null)
+            {
+                return HttpNotFound();
+            }
+            return RedirectToAction("Index");
+        }
+        //get
+        // POST: 
+        
+        public ActionResult Delete(int id)
+        {
+            Superheromodel superhero = db.Superhero.Find(id);
+            if (superhero == null)
+            {
+
+                return RedirectToAction("Index");
+            }
+            db.Superhero.Remove(superhero);
+            db.SaveChanges();
+            return RedirectToAction("Index");
         }
 
     }
