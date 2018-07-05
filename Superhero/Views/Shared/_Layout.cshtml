@@ -9,6 +9,7 @@
 
 </head>
 <body>
+
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -19,6 +20,7 @@
                 </button>
                 @Html.ActionLink("Superhero", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
+
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
@@ -32,6 +34,18 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
+        <div class="row">
+            <div class="groot-image col-md-6">
+                
+            </div>
+            <div class="groot-image col-md-6">
+                <center>
+                    <img src="~/Images/Groot_on_casset.jpg" />
+                </center>
+              
+            </div>
+        </div>
+        
         <footer>
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
         </footer>
